@@ -10,14 +10,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <title>Rock, Paper, Scissors</title>
 </head>
 <body>
-  <!-- <center> -->
+
+
     <div class="container">
     <div class="score">
         <h1>ROCK <br> PAPER <br> SCISSORS</h1>
-        <div class="point"><h6>SCORE</h6> <span>12</span></div>
+        <div class="point"><h6>SCORE</h6> <span>0</span></div>
     </div>
 
     <div class="secret">
@@ -25,7 +26,7 @@
         <h1>RULES</h1>
       <img class="close" src="./images/icon-close.svg" alt="">
       </div>
-      <img src="./images/image-rules.svg" alt="" >
+      <img src="./images/image-rules.svg" alt="">
     </div>
 
 
@@ -35,14 +36,25 @@
         <img class="scissors" src="./images/icon-scissors.svg" alt="">
         <img class="rock" src="./images/icon-rock.svg" alt="">
     </div>
-<div class="choosen">
-  <div class="names">
-    <h3> You Picked</h3>
-    <h3>The House Picked</h3> </div>
-    <div class="imgs"><img class="paper" src="./images/icon-paper.svg" alt=""></div>
-  <div class="space"></div>
- 
-</div>
+
+    <div class="choosen">
+      <div class="names">
+        <h3>YOU PICKED</h3>
+        <h3>THE HOUSE PICKED</h3>
+      </div>
+     <div class="imgs">
+      <div class="selected_img"></div>
+
+      <div class="result">
+        <h1 class="win">YOU WIN!</h1>
+      <button class="btn" onclick="restart()">PLAY AGAİN</button>
+      </div>
+      
+      <div class="space"></div>
+     </div>
+    </div>
+
+    
 
     <div class="rules">
        <button>RULES</button>
@@ -51,25 +63,17 @@
 
 
   </div>
-  <!-- </center> -->
+ 
 
-
-  <!-- Score
-  Rules
 
  
-  
 
-  You Win
+  <!-- You Win
   You Lose
-
-  Play Again -->
-
-
-
-
+  Play Again  -->
 
 
 <script src="./app.js"></script>
+
 </body>
 </html>
