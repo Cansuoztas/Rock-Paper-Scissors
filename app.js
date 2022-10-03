@@ -81,21 +81,26 @@ const pc = (left) => {
 const result = (left,right) => {
 if (left == "paper" && right == "scissors") {
   setDecision("YOU LOSE!");
-  
+  beepAudio.play()
 }
 if (left == "paper" && right == "rock") {
   setDecision("YOU WIN!");
   setScore(SCORE + 1);
+  shootAudio.play()
 }
 if (left == "paper" && right == "paper") {
   setDecision("It's a tie!");
+  
+
 }
 if (left == "rock" && right == "scissors") {
   setDecision("YOU WIN!");
   setScore(SCORE + 1);
+  shootAudio.play()
 }
 if (left == "rock" && right == "paper") {
   setDecision("YOU LOSE!");
+  beepAudio.play()
 }
 if (left == "rock" && right == "rock") {
   setDecision("It's a tie!");
@@ -105,10 +110,12 @@ if (left == "scissors" && right == "scissors") {
 }
 if (left == "scissors" && right == "rock") {
   setDecision("YOU LOSE!");
+   beepAudio.play()
 }
 if (left == "scissors" && right == "paper") {
   setDecision("YOU WIN!");
   setScore(SCORE + 1);
+  shootAudio.play()
 }
 }
 
